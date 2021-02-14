@@ -1,4 +1,4 @@
-import numpy as np
+#import numpy as np
 import pickle
 from keras.models import model_from_json
 import pandas as pd
@@ -41,4 +41,4 @@ class final:
         spec=self.normalise(spec) # Converts raw data to spectrogram
         pred_array=self.model.predict(spec)[0] # Predicts probabilities for each species
         pred_label=list(pred_array).index(max(pred_array)) # Calculate the species ID
-        return(rec_id,np.round(duration,3),pred_label,datetime.datetime.now()-start)
+        return(rec_id,duration,pred_label,datetime.datetime.now()-start)
