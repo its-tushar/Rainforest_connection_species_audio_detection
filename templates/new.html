@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #8f91f7;
+		}
+		table
+		{
+			margin-left: 480px;
+			margin-top: 90px;
+		}
+		table,th,td
+		{
+			background-image: linear-gradient(to bottom right, white, #8f91f7);
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		table
+		{
+			width: 450px;
+			height: 500px;
+		}
+		#heading
+		{
+			font-size: 25px;
+			font-weight: bolder;
+			color: blue;
+		}
+		th,td
+		{
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th colspan="2" id="heading">Prediction Results</th>
+		</tr>
+		<tr>
+			<th>Recording ID</th>
+			<td>{{Recording_id}}</td>
+		</tr>
+		<tr>
+			<th>Audio Duration</th>
+			<td>{{Audio_Duration}}</td>
+		</tr>
+		<tr>
+			<th>Species</th>
+			<td>{{predicted}}</td>
+		</tr>
+		<tr>
+			<th>Time taken</th>
+			<td>{{time}}</td>
+		</tr>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Wikipedia Project</title>
+	<style type="text/css">
+		body
+		{
+			background-image: url("hh.png");
+			background-repeat: no-repeat;
+			background-color: #e1eafa;
+		}
+		label
+		{
+			font-size: 25px;
+			font-weight: bolder;
+			color: blue;
+		}
+		textarea
+		{
+			background-color: #e1eafa;
+		}
+		#one
+		{
+			margin-left: 450px;
+		}
+		#two
+		{
+			margin-left: 463px;
+		}
+		#btn
+		{
+			height: 40px;
+			width: 120px;
+			margin-left: 650px;
+			border-radius: 20px;
+			border-color: white;
+			font-size: 16px;
+			background: blue;
+			font-weight: bold;
+		}
+		#onee
+		{
+			height: 100px;
+			width: 600px;
+			margin-top: 150px;
+			margin-left: 20px;
+			font-size: 20px;
+
+		}
+		#twoo
+		{
+			height: 100px;
+			width: 600px;
+			margin-left: 720px;
+			margin-top: -100px;
+			font-size: 20px;
+		}
+		#hr
+		{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+    <h1>Rainforest Connection Species Audio Detection</h1>
+
+<div>
+  <form action="/predict" method="POST">
+  	<br><br>
+    <label for="Enter_index" id="one">Enter index</label>
+      <textarea name="Enter_index" rows="4" cols="40"></textarea>
+    <br><br>
+    <input type="submit" value="Submit" id="btn">
+  </form>
+
+  <div id="onee">
+		&#x2A; Enter index(0-39), All index has a Audio file corresponding to them.
+	</div>
+	<div id="twoo">
+		&#x2A; Audio files have large size, so due to limitation it supports only 40 audio files(index 0-39).
+	</div>
+</div>
+</body>
+</html>
